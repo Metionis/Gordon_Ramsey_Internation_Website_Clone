@@ -1,0 +1,45 @@
+.navigation-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo-container {
+  flex-shrink: 0;
+}
+
+.navi-list {
+  padding: 0;
+  margin: 0;
+  height: 70px;
+}
+
+.navi-list ul {
+  display: flex;
+  list-style-type: none; /* This removes the bullet points */
+  padding: 0;
+  margin: 0;
+}
+
+.navi-list li {
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.5s; /* Smooth transition for the hover effect */
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  height: 35px;
+  padding-top: 25px;
+}
+
+.navi-list li:hover {
+  background-color: rgba(196, 196, 196, 0.594); /* Adjusted color for visibility */
+}
+
+.gordon-logo {
+  height: 50px; /* Adjust the height as needed */
+}
+
+.gift-button {
+  background-color: rgba(196, 196, 196, 0.4);
+}
