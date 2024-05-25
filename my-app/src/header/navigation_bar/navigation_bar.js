@@ -7,8 +7,10 @@ function Navi () {
   return (
     <div className="navigation-bar">
       <Logo />
-      <Listnavigate />
-      <Sticker />
+      <div className="list-stick-container">
+        <Listnavigate />
+        <Sticker />
+      </div>
     </div>
   )
 }
