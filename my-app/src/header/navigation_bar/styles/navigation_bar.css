@@ -24,7 +24,7 @@
 .navi-list li {
   padding: 10px;
   cursor: pointer;
-  transition: background-color 0.5s; /* Smooth transition for the hover effect */
+  transition: background-color 1.5s; /* Smooth transition for the hover effect */
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 15px;
@@ -73,6 +73,10 @@
 
 .menu-item ul li {
   border-bottom: 1px solid #ddd; /* Add a bottom border to separate items */
+  white-space: nowrap; /* Prevent text from wrapping */
+  text-align: left;
+  padding-right: 30px;
+  max-width: 400px;
 }
 
 .menu-item ul li:last-child {
@@ -81,6 +85,7 @@
 
 .menu-item:hover ul {
   display: block;
+  transition: 1s;
 }
 
 .gift-button {
@@ -92,4 +97,26 @@
 .menu-item:hover {
   background-color: hsla(0, 1%, 27%, 0);
   transition: background-color 0.5s;
+}
+
+.dropdown-icon {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  margin-left: 5px;
+  vertical-align: middle;
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+  border-top: 7px solid currentColor;  
+  transition: 0.7s;
+}
+
+.menu-item:hover .dropdown-icon {
+  transform: rotate(180deg); /* Rotate the arrowhead */
+  transition: 0.7s;
+}
+
+.logo-container img{
+  height: 25px;  
+  align-items: center;
 }
