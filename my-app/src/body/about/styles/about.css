@@ -32,3 +32,13 @@
 .about1-text, .about1-table, .about1-table-cell {
   padding: 10px;
 }
+
+.about1-text {
+  color: black; /* Set text color to black for the entire component */
+}
+
+.about1-text h2,
+.about1-text p,
+.about1-text a {
+  color: black; /* Set text color to black for headings, paragraphs, and links */
+}

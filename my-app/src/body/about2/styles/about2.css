@@ -22,3 +22,13 @@
 .text2, .table2, .table2-cell {
   padding: 10px;
 }
+
+.text2 {
+  color: black; /* Set text color to black for the entire component */
+}
+
+.text2 h2,
+.text2 p,
+.text2 span {
+  color: black; /* Set text color to black for headings, paragraphs, and spans */
+}

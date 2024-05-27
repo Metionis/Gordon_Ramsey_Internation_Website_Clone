@@ -1,7 +1,15 @@
-import React from "react";
+import {React, useState} from "react";
 import "./style/Footer1.css";
+import Footer2 from "../footer2/Footer2";
 
 function Footer1 () {
+  const [showNewsletter, setShowNewsletter] = useState(false);
+
+  // Function to toggle the visibility of the newsletter form
+  const toggleNewsletter = () => {
+    setShowNewsletter(!showNewsletter);
+  };
+
   return (
     <div className="footer1-container">
       <div className="sticker-container">
@@ -47,11 +55,12 @@ function Footer1 () {
         </ol>
       </div>
       <div className="newsletter-container">
-        <div className="newsletter-button">
-          <a href="">NEWSLETTER SIGN UP</a>
+        <div className="newsletter-button" onClick={toggleNewsletter}>
+          <a href="#">NEWSLETTER SIGN UP</a>
           <i className="arrow"></i>
         </div>
       </div>
+      {showNewsletter && <Footer2 />}
     </div>
   );
 }

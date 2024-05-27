@@ -34,3 +34,7 @@
   transform: rotate(180deg); /* Rotate the arrowhead */
   transition: 0.7s;
 }
+
+.newsletter-container a {
+  color: black;
+}
