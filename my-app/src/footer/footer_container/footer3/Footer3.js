@@ -7,16 +7,16 @@ function Footer3 () {
       <div>
         <ul>
           <li>
-            <a href="">Contact</a>
+            <a>Contact</a>
           </li>
           <li>
-            <a href="">Disclaimer</a>
+            <a>Disclaimer</a>
           </li>
           <li>
-            <a href="">Privacy policy</a>
+            <a>Privacy policy</a>
           </li>
           <li>
-            <a href="">Cookie policy</a>
+            <a>Cookie policy</a>
           </li>
         </ul>
       </div>
